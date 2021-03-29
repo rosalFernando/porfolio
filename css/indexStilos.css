@@ -1,0 +1,641 @@
+@import url(https://fonts.googleapis.com/css?family=Expletus+Sans);
+:root{
+
+	--primary-color:#05668D;
+	--second-color: #028090;
+	--third-color: #00A896;
+	--third-color-2:#02C39A;
+	--dark-primary-color:#024058;
+
+
+}
+body{
+	font-family: "Expletus Sans", sans-serif;
+}
+header{
+	  background-image: url("../img/fondo-movil.jpg");
+	  position: relative;
+	  background-attachment: fixed;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  width: 100%;
+	  height: 50vh;
+	  
+}
+header img{
+	display: none;
+}
+
+#eslogan{
+	display: none;
+}
+#sobreMi{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 300px;
+	width: 100%;
+}
+#sobreMi img{
+	margin-top: 2rem;
+	padding:0px;
+	width: 90%;
+	height: 99%;
+	align-self: center;
+}
+
+#habilidades{
+	text-align: center;
+	border-top: 3px solid var(--primary-color);
+	margin: 50px auto 0;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+#divHab{
+	
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+}
+
+#divHab article{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 90%;
+	height: fit-content;
+	margin: 0.8rem;
+	align-self: center;
+	text-align: center;
+	border: 2px solid var(--third-color);
+	box-shadow: 5px 5px 5px var(--third-color);
+}
+
+#contenedorHablididad{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-items: center;
+}
+
+.logo{
+	width: 2rem;
+	height: 2rem;
+	align-self: center;
+	margin-right: 10px;
+	padding: 0px;
+}
+#proyectos{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	text-align: center;
+	border-top: 3px solid var(--primary-color);
+	margin: 50px auto 0;
+}
+
+#divProye{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.proyec{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-self: center;
+	text-align: center;
+	justify-content: space-around;
+	background: linear-gradient(90deg, var(--primary-color) 0%, var(--second-color) 35%, var(--third-color) 100%);
+	border: 2px solid var(--third-color);
+	box-shadow: 5px 5px 5px grey;
+	width: 90%;
+	height: 50%;
+	margin: 0.8rem;
+	border-radius: 10px;
+
+}
+.proyec h3{
+	margin-block-start: 5px;
+	margin-block-end: 5px;
+}
+.imgProyecto{
+	align-self: center;
+	width: 100%;
+	height: 20rem;
+}
+
+.imgRepo{
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+	margin-bottom: 5px;
+	color: black;
+	border-radius: 1rem;
+}
+.tecnoProyect{
+	margin-top: 2px;
+	justify-content: center;
+	align-self: center;
+	height: 3rem;
+	width: 10rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#contacto{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	text-align: center;
+	border-top: 3px solid var(--primary-color);
+	margin-top: 1rem;
+}
+#contacto img{
+	align-self: center;
+	max-width: 200px;
+	max-height: 200px;
+	border: 2px solid var(--second-color);
+	border-radius: 90px;
+}
+#quienSoy{
+	align-self: center;
+	justify-items: center;
+	width: fit-content;
+	height: fit-content;
+	display: flex;
+	justify-items: space-around;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+#quienSoy p{
+	text-align: justify;
+	width: 14rem;
+	height: 14rem;
+}
+#contacto ul{
+	text-align: justify;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+}
+#contacto ul li{
+	margin-top: 1rem;
+}
+
+.material-icons{
+	color: var(--second-color);
+}
+.mi_icono{
+	height: 1.5rem;
+	width: 1.5rem;
+}
+
+footer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+	height: 20%;
+	background: linear-gradient(90deg, var(--primary-color) 0%, var(--second-color) 35%, var(--third-color) 100%);
+}
+
+footer img{
+	width: 4rem;
+	height: 2.5rem;
+	border-radius: 30px;
+	margin-top: 4px;
+}
+
+footer p{
+	align-self: center;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+progress[value] {
+	appearance: none;
+	border: none;
+	width: 70%; height: 20px;
+	  background-color: whiteSmoke;
+	  border-radius: 3px;
+	  box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+	
+	color: royalblue;
+	
+	position: relative;
+	margin: 0px; 
+}
+
+progress[value]::-webkit-progress-bar {
+	background-color: whiteSmoke;
+	border-radius: 3px;
+	box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+}
+
+
+
+progress[value]::-moz-progress-bar {
+	/* Gradient background with Stripes */
+	background-image:
+	-moz-linear-gradient( 135deg,
+		 transparent,
+		transparent 33%,
+		rgba(0,0,0,.1) 33%,
+		 rgba(0,0,0,.1) 66%,
+		transparent 66%),
+    -moz-linear-gradient( top,
+		rgba(255, 255, 255, .25),
+			rgba(0,0,0,.2)),
+     -moz-linear-gradient( left, #09c, #f44);
+	background-size: 35px 20px, 100% 100%, 100% 100%;
+	border-radius:3px;
+	}
+
+
+
+
+
+
+.java::-webkit-progress-value,
+.android::-webkit-progress-value,
+.html5::-webkit-progress-value,
+.python::-webkit-progress-value  {
+	background-image:
+	-webkit-linear-gradient( 135deg,
+													 transparent,
+													 transparent 33%,
+													 rgba(0,0,0,.1) 33%,
+													 rgba(0,0,0,.1) 66%,
+													 transparent 66%),
+    -webkit-linear-gradient( top,
+														rgba(255, 255, 255, .25),
+														rgba(0,0,0,.2)),
+     -webkit-linear-gradient( left, #09c, #f44);
+}
+.ts::-webkit-progress-value,
+.ionic::-webkit-progress-value,
+.flutter::-webkit-progress-value,
+.css3::-webkit-progress-value,
+.php::-webkit-progress-value 
+{
+	/* Gradient background with Stripes */
+	background-image:
+	-webkit-linear-gradient( 135deg,
+													 transparent,
+													 transparent 33%,
+													 rgba(0,0,0,.1) 33%,
+													 rgba(0,0,0,.1) 66%,
+													 transparent 66%),
+    -webkit-linear-gradient( top,
+														rgba(255, 255, 255, .25),
+														rgba(0,0,0,.2)),
+     -webkit-linear-gradient( left, #09c, #ff0);
+}
+.django::-webkit-progress-value,
+.angular::-webkit-progress-value,
+.jquery::-webkit-progress-value,
+.js::-webkit-progress-value 
+{
+	/* Gradient background with Stripes */
+	background-image:
+	-webkit-linear-gradient( 135deg,
+													 transparent,
+													 transparent 33%,
+													 rgba(0,0,0,.1) 33%,
+													 rgba(0,0,0,.1) 66%,
+													 transparent 66%),
+    -webkit-linear-gradient( top,
+														rgba(255, 255, 255, .25),
+														rgba(0,0,0,.2)),
+     -webkit-linear-gradient( left, #09c, #690);
+}
+.html5::-moz-progress-bar,
+.php::-moz-progress-bar {
+	/* Gradient background with Stripes */
+	background-image:
+	-moz-linear-gradient( 135deg,
+													 transparent,
+													 transparent 33%,
+													 rgba(0,0,0,.1) 33%,
+													 rgba(0,0,0,.1) 66%,
+													 transparent 66%),
+    -moz-linear-gradient( top,
+														rgba(255, 255, 255, .25),
+														rgba(0,0,0,.2)),
+     -moz-linear-gradient( left, #09c, #f44);
+}
+
+.css3::-moz-progress-bar,
+.php::-moz-progress-bar {
+
+	/* Gradient background with Stripes */
+	background-image:
+	-moz-linear-gradient( 135deg,
+													 transparent,
+													 transparent 33%,
+													 rgba(0,0,0,.1) 33%,
+													 rgba(0,0,0,.1) 66%,
+													 transparent 66%),
+    -moz-linear-gradient( top,
+														rgba(255, 255, 255, .25),
+														rgba(0,0,0,.2)),
+     -moz-linear-gradient( left, #09c, #ff0);
+}
+
+.jquery::-moz-progress-bar,
+.node-js::-moz-progress-bar {
+	background-image:
+	-moz-linear-gradient( 135deg,
+													 transparent,
+													 transparent 33%,
+													 rgba(0,0,0,.1) 33%,
+													 rgba(0,0,0,.1) 66%,
+													 transparent 66%),
+    -moz-linear-gradient( top,
+														rgba(255, 255, 255, .25),
+														rgba(0,0,0,.2)),
+     -moz-linear-gradient( left, #09c, #690);
+}
+
+@media (min-width: 609px) and (max-width: 1000px){
+	header{
+		background-image: url("../img/fondo-movil.jpg");
+		position: relative;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+		height: 50vh;
+		
+  }
+  header img{
+	  display: inline;
+
+	  width: 6rem;
+	  height: 6rem;
+	  margin: 1rem;
+  }
+
+  #sobreMi img{
+	align-self: center;
+	width: 70%;
+}
+#divHab article{
+	width: 80%;
+	
+}
+
+#divHab article h3{
+	font-size: 2rem;
+}
+
+section h2{
+	font-size: 2.5rem;
+}
+.logo{
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+}
+
+.proyec{
+	width: 80%;
+	height: 50%;
+}
+
+.proyec h3{
+	text-align: center;
+	margin: 0.8rem;
+	font-size: 1.5rem;
+}
+.imgProyecto{
+	height: 350px;
+}
+
+.imgRepo{
+
+	margin-bottom: 5px;
+	width: 3rem;
+	height: 3rem;
+}
+.tecnoProyect{
+	
+	height: 4rem;
+	width: 12rem;
+
+}
+
+#enlacesContacto li a{
+	font-size: 1.2rem;
+}
+#quienSoy p{
+	text-align: justify;
+	width: 14rem;
+	height: 14rem;
+}
+
+ }
+ 
+ @media (min-width: 1000px){
+	 
+ 
+	header{
+		background-image: url("../img/fondo.jpg");
+		position: relative;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+		height: 100vh;
+		
+  }
+  header img{
+	  display: inline;
+	  width: 16rem;
+	  height: 16rem;
+	  margin: 1rem;
+	  animation: 2s rotSlidImg linear;
+  }
+
+
+  @keyframes rotSlidImg {
+	from {
+		transform: rotate(0deg);
+	  margin-left: 100%;
+	  width: 16rem;
+	}
+  
+	to {
+	transform: rotate(360deg);
+	  margin-left: 0%;
+	  width: 16rem;
+	}
+  }
+
+  #eslogan{
+	text-align: center;
+	display: flex;
+	align-self: center;
+	width: 37%;
+	height: 10rem;
+	margin: 1rem;
+	animation: 2s slidein linear;
+}
+@keyframes slidein {
+	from {
+	  margin-left: 100%;
+	  width: 37%
+	}
+  
+	to {
+	  margin-left: 0%;
+	  width: 37%
+	}
+  }
+#eslogan h1{
+	align-self: center;
+	color: white;
+	font-size: 3rem;
+}
+
+  #sobreMi{
+	  height: fit-content;
+  }
+
+  #sobreMi img{
+	align-self: center;
+	width: 45%;
+	height: 30rem;
+}
+#habilidades{
+	width: fit-content;
+	height: fit-content;
+	align-self: center;
+}
+#divHab{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+}
+
+#divHab article{
+	width: 25rem;
+	height: 40rem;
+}
+
+#divHab article h3{
+	font-size: 2rem;
+}
+
+#proyectos{
+	width: fit-content;
+	height: fit-content;
+	justify-content: center;
+	align-self: center;
+}
+
+#divProye{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: fit-content;
+	height: fit-content;
+	justify-content: center;
+}
+.proyec{
+	width: 25rem;
+	height: 50%;
+	border-radius: 0px;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+}
+.proyec:hover{
+	transform: rotate(-2deg);
+}
+
+.tecnoProyect{
+	
+	height: fit-content;
+	width: 12rem;
+
+}
+
+
+section h2{
+	font-size: 2.5rem;
+}
+.logo{
+	width: 3rem;
+	height: 3rem;
+	margin-right: 10px;
+}
+
+
+
+.proyec h3{
+	text-align: center;
+	margin: 10px;
+	font-size: 1.5rem;
+}
+
+
+
+.imgRepo{
+	width: 3rem;
+	height: 3rem;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+}
+
+.imgRepo:hover{
+	transform: rotate(360deg);
+}
+
+#enlacesContacto li a{
+	font-size: 1.2rem;
+}
+
+
+
+#quienSoy{
+	align-self: center;
+	justify-items: center;
+	width: fit-content;
+	height: fit-content;
+	display: flex;
+	justify-items: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+#quienSoy p{
+	margin-left: 3rem;
+	text-align: justify;
+	width: 14rem;
+	height: 14rem;
+}
+
+
+
+
+#contacto img{
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+}
+#contacto img:hover{
+	transform: scale3d(1.1,1.1,1.1);
+}
+	 
+ }
